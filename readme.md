@@ -1,0 +1,4 @@
+
+# req
+
+* vcpkg install spdlog
