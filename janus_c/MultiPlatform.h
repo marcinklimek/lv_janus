@@ -28,7 +28,7 @@
 #define SHUT_SEND	1	// Windows SD_SEND, Linux SHUT_WR, both = 1
 #define SHUT_BOTH	2	// Windows SD_BOTH, Linux SHUT_RDWR, both = 2
 
-#ifdef _WIN32
+#ifdef _WINDOWS
 	#define _WINSOCKAPI_	// stops windows.h including winsock.h
 	#include <WinSock2.h>
 	#include <winsock.h>
@@ -84,7 +84,7 @@ typedef int							ssize_t;			//!< Used on Linux as return type of send() an recv
 #endif // linux
 
 // Thread??
-#ifdef _WIN32
+#ifdef _WINDOWS
 	typedef HANDLE                  mutex_t;
 	typedef int						f_thread_t;
 	#define initmutex(m)            (m = CreateMutex(NULL, FALSE, NULL))==NULL ? GetLastError() : 0

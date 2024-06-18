@@ -18,7 +18,7 @@
 #define _FERS_LLTDL_H				// Protect against multiple inclusion
 
 #include "FERSlib.h"
-#ifndef _WIN32
+#ifndef _WINDOWS
 #include <sys/ioctl.h>
 #endif
 

@@ -1,7 +1,8 @@
 // WinUSBConsoleApplication.cpp : Defines the entry point for the console application.
 //
 
-#ifdef WIN32
+
+#ifdef _WINDOWS
 #define _WINSOCKAPI_	// stops windows.h including winsock.h
 
 //#include "stdafx.h"
@@ -27,7 +28,7 @@
 #include "FERSlib.h"
 #include "MultiPlatform.h"
 
-#ifdef WIN32
+#ifdef _WINDOWS
 #pragma comment(lib, "setupapi.lib")
 #pragma comment(lib, "winusb.lib")
 #endif
@@ -39,7 +40,7 @@ using namespace std;
 
 #define TIMEOUT  1000
 
-#ifdef WIN32
+#ifdef _WINDOWS
 
 												   //Modify this value to match the VID and PID in your USB device descriptor.
 												   //Use the formatting: "Vid_xxxx&Pid_xxxx" where xxxx is a 16-bit hexadecimal number.

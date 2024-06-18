@@ -29,7 +29,7 @@
 
 
 
-#ifdef _WIN32
+#ifdef _WINDOWS
     #define popen _popen
     #define DEFAULT_GNUPLOT_PATH "..\\gnuplot\\gnuplot.exe"
     #define GNUPLOT_TERMINAL_TYPE "wxt"
@@ -65,7 +65,7 @@
 #define SW_RELEASE_DATE			"02/11/2023"
 #define FILE_LIST_VER			"3.2"
 
-#ifdef _WIN32
+#ifdef _WINDOWS
 #define CONFIG_FILENAME			"Janus_Config.txt"
 #define RUNVARS_FILENAME		"RunVars.txt"
 #define PIXMAP_FILENAME			"pixel_map.txt"

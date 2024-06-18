@@ -3,7 +3,7 @@
 
 #include "FERS_LLusb.h"
 
-#ifdef _WIN32
+#ifdef _WINDOWS
 #pragma comment(lib, "setupapi.lib")
 #pragma comment(lib, "winusb.lib")
 #endif
